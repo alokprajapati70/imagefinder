@@ -1,0 +1,288 @@
+
+
+/* image.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #0077cc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+/*nav photo*/
+#nav-photo{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #0077cc;
+}
+
+form {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #0077cc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 10px;
+    height: 10%;
+    font-size: 1em;
+    background-color: #f8fbfd;
+    color: rgb(37, 197, 51);
+    border: none; 
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-top: 2px;
+    
+}
+
+#search-button:hover {
+    background-color: #005fa3;
+}
+
+.search-results {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.search-result {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-result img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.search-result a {
+    display: block;
+    margin-top: 10px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.search-result a:hover {
+    text-decoration: underline;
+}
+
+#show-more-button {
+    margin: 40px 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#show-more-button:hover {
+    background-color: #005fa3;
+}
+
+
+
+footer { width: 100%; 
+    background-color: #0077cc; color: white; 
+    padding: 0px 0; 
+    /* position: fixed;  */
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px; 
+
+}
+
+
+/*contact */
+.contact-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-content h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-content p {
+    text-align: center;
+    color: #666;
+}
+
+.contact-content div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content input,
+.contact-content textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content button:hover {
+    background-color: #555;
+}
+
+.contact-content textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+#information{
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .contact-content {
+        padding: 10px;
+    }
+
+    .contact-content h1,
+    .contact-content p {
+        font-size: 1.2em;
+    }
+
+    .contact-content input,
+    .contact-content textarea {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .contact-content button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+
+/* Responsive Design  image*/
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    .search-results {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+} 
+
+ 
+
+
+
+ 
